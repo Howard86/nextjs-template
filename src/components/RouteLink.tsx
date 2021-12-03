@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Link, LinkProps } from '@chakra-ui/react';
+import { Link, LinkProps } from '@mui/material';
 import NextLink from 'next/link';
 
 interface RouteLinkProps extends LinkProps {

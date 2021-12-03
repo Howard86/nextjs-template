@@ -3,15 +3,14 @@ import React from 'react';
 import {
   Box,
   Container,
-  Heading,
+  Grid,
   Link,
-  SimpleGrid,
   Skeleton,
-  Text,
-} from '@chakra-ui/react';
+  Typography,
+} from '@mui/material';
 import Head from 'next/head';
+import Image from 'next/image';
 
-import Image from '@/components/Image';
 import RouteLink from '@/components/RouteLink';
 import { useGetNameQuery } from '@/services/local';
 
@@ -22,69 +21,95 @@ const Home = (): JSX.Element => {
     <Container>
       <Box>
         Go to <RouteLink href="/new-page">New Page</RouteLink>
-        <Skeleton isLoaded={isSuccess}>
-          Local API /hello responds {data?.name} called{' '}
-          {data?.timestamp || 0 - fulfilledTimeStamp}ms ago
-        </Skeleton>
+        {isSuccess ? (
+          `Local API /hello responds called
+          ${data?.timestamp || 0 - fulfilledTimeStamp}ms ago`
+        ) : (
+          <Skeleton />
+        )}
       </Box>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box as="main">
-        <Heading as="h1">
+      <Box component="main">
+        <Typography variant="h1" component="h1">
           Welcome to{' '}
-          <Link href="https://nextjs.org" isExternal>
+          <Link target="_blank" rel="noopener" href="https://nextjs.org">
             Next.js!
           </Link>
-        </Heading>
+        </Typography>
 
-        <Text>
-          Get started by editing <Text as="code">pages/index.js</Text>
-        </Text>
+        <Typography>
+          Get started by editing{' '}
+          <Typography component="code">pages/index.js</Typography>
+        </Typography>
 
-        <SimpleGrid>
-          <Link href="https://nextjs.org/docs" isExternal>
-            <Heading as="h3">Documentation &rarr;</Heading>
-            <Text>
-              Find in-depth information about Next.js features and API.
-            </Text>
-          </Link>
+        <Grid container spacing={2}>
+          <Grid item xs={6}>
+            <Link target="_blank" rel="noopener" href="https://nextjs.org/docs">
+              <Typography variant="h3" component="h3">
+                Documentation &rarr;
+              </Typography>
+              <Typography>
+                Find in-depth information about Next.js features and API.
+              </Typography>
+            </Link>
+          </Grid>
 
-          <Link href="https://nextjs.org/learn" isExternal>
-            <Heading as="h3">Learn &rarr;</Heading>
-            <Text>
-              Learn about Next.js in an interactive course with quizzes!
-            </Text>
-          </Link>
+          <Grid item xs={6}>
+            <Link
+              target="_blank"
+              rel="noopener"
+              href="https://nextjs.org/learn"
+            >
+              <Typography variant="h3" component="h3">
+                Learn &rarr;
+              </Typography>
+              <Typography>
+                Learn about Next.js in an interactive course with quizzes!
+              </Typography>
+            </Link>
+          </Grid>
 
-          <Link
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            isExternal
-          >
-            <Heading as="h3">Examples &rarr;</Heading>
-            <Text>
-              Discover and deploy boilerplate example Next.js projects.
-            </Text>
-          </Link>
+          <Grid item xs={6}>
+            <Link
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/vercel/next.js/tree/master/examples"
+            >
+              <Typography variant="h3" component="h3">
+                Examples &rarr;
+              </Typography>
+              <Typography>
+                Discover and deploy boilerplate example Next.js projects.
+              </Typography>
+            </Link>
+          </Grid>
 
-          <Link
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            isExternal
-          >
-            <Heading as="h3">Deploy &rarr;</Heading>
-            <Text>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </Text>
-          </Link>
-        </SimpleGrid>
+          <Grid item xs={6}>
+            <Link
+              target="_blank"
+              rel="noopener"
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            >
+              <Typography variant="h3" component="h3">
+                Deploy &rarr;
+              </Typography>
+              <Typography>
+                Instantly deploy your Next.js site to a public URL with Vercel.
+              </Typography>
+            </Link>
+          </Grid>
+        </Grid>
       </Box>
 
-      <Box as="footer">
+      <Box component="footer">
         <Link
+          target="_blank"
+          rel="noopener"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          isExternal
         >
           Powered by{' '}
           <Image src="/vercel.svg" alt="Vercel Logo" width={64} height={64} />
