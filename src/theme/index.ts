@@ -1,12 +1,17 @@
-import { extendTheme } from '@chakra-ui/react';
+import { red } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
 
-import styles from './styles';
-
-const theme = extendTheme({
-  styles,
-  config: {
-    initialColorMode: 'light',
-    useSystemColorMode: false,
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#556cd6',
+    },
+    secondary: {
+      main: '#19867b',
+    },
+    error: {
+      main: red.A400,
+    },
   },
 });
 

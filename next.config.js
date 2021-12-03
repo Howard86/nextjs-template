@@ -1,9 +1,19 @@
-const { PHASE_PRODUCTION_BUILD } = require('next/constants');
+const {
+  PHASE_PRODUCTION_BUILD,
+  PHASE_DEVELOPMENT_SERVER,
+} = require('next/constants');
 
 /** @type{import('next').NextConfig} */
-const config = {
+const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  webpack: (config) => {
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    };
+    return config;
+  },
 };
 
 module.exports = (phase) => {
@@ -13,10 +23,19 @@ module.exports = (phase) => {
         enabled: process.env.ANALYZE === 'true',
       });
 
-      return withBundleAnalyzer(config);
+      return withBundleAnalyzer(nextConfig);
+    }
+
+    case PHASE_DEVELOPMENT_SERVER: {
+      const withTM = require('next-transpile-modules')([
+        '@mui/material',
+        '@mui/system',
+      ]);
+
+      return withTM(nextConfig);
     }
 
     default:
-      return config;
+      return nextConfig;
   }
 };
