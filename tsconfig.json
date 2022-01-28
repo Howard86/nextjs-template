@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -16,10 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"] // this mapping is relative to "baseUrl"
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"], // this mapping is relative to "baseUrl"
+      "test-utils": ["test-utils"]
     },
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "cypress"]
 }

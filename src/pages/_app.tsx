@@ -1,13 +1,9 @@
 import React from 'react';
 
-import { CssBaseline } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { Provider as ReduxProvider } from 'react-redux';
 
-import store from '@/redux/store';
-import theme from '@/theme';
+import GlobalProviders from '@/components/GlobalProviders';
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
@@ -19,12 +15,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => (
         name="viewport"
       />
     </Head>
-    <ReduxProvider store={store}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </ReduxProvider>
+    <GlobalProviders>
+      <Component {...pageProps} />
+    </GlobalProviders>
   </>
 );
 
