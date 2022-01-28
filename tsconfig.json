@@ -16,7 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"], // this mapping is relative to "baseUrl"
       "test-utils": ["test-utils"]
     },
     "incremental": true

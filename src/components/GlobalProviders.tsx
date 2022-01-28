@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles'
 import { Provider as ReduxProvider } from 'react-redux';
 
 import store from '@/redux/store';
