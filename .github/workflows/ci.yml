@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12, 14, 16]
+        node-version: [14]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,5 +23,5 @@ jobs:
           cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn lint
-      - run: yarn build
       - run: yarn test
+      - run: yarn build
