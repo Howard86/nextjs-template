@@ -50,7 +50,7 @@ module.exports = {
     'airbnb',
     'eslint:recommended',
     'plugin:@next/next/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     project: './tsconfig.eslint.json',
@@ -65,13 +65,13 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint', 'simple-import-sort'],
+      plugins: ['simple-import-sort'],
       extends: [
         'airbnb-typescript',
         'airbnb/hooks',
         'plugin:@typescript-eslint/recommended',
         'plugin:@next/next/recommended',
-        'prettier',
+        'plugin:prettier/recommended',
       ],
       rules: {
         ...sharedRules,
@@ -87,6 +87,11 @@ module.exports = {
         ],
         '@typescript-eslint/explicit-module-boundary-types': 0,
       },
+    },
+    {
+      files: ['__tests__/**/*.ts', '__tests__/**/*.tsx'],
+      plugins: ['jest'],
+      extends: ['plugin:jest/all', 'plugin:testing-library/react'],
     },
   ],
   rules: sharedRules,

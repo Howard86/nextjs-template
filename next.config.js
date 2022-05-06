@@ -4,6 +4,9 @@ const { PHASE_PRODUCTION_BUILD } = require('next/constants');
 const config = {
   reactStrictMode: true,
   swcMinify: true,
+  eslint: {
+    dirs: ['src', '__tests__'],
+  },
 };
 
 module.exports = (phase) => {
