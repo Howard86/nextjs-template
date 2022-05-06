@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/Howard86/nextjs-template/compare/v1.4.1...v1.5.0) (2022-05-06)
+
+
+### Features
+
+* set up eslint config for testing ([88a7804](https://github.com/Howard86/nextjs-template/commit/88a7804e328cc0adecaff9cff0a6ba8013bf22ad))
+
+
+
 ## [1.4.1](https://github.com/Howard86/nextjs-template/compare/v1.4.0...v1.4.1) (2022-02-20)
 
 
@@ -48,24 +57,6 @@
 * **script:** set up chakra-cli gen script ([de16f5e](https://github.com/Howard86/nextjs-template/commit/de16f5e8e0579ad19b40a0030272d3cbf98824df))
 * **service:** add local api call to rtk query ([38739f3](https://github.com/Howard86/nextjs-template/commit/38739f37de1a9dd32a3773d0174115d7ebaa498e))
 * **style:** update chakra theme ([2e4854c](https://github.com/Howard86/nextjs-template/commit/2e4854cc22832cc88341b374a286b43f30315561))
-
-
-
-# [1.2.0](https://github.com/Howard86/nextjs-template/compare/1f696f7734eddf9704086b5cc911e8daab1e5e9c...v1.2.0) (2021-07-29)
-
-
-### Bug Fixes
-
-* update based on new eslint configs ([3413b0b](https://github.com/Howard86/nextjs-template/commit/3413b0bbe2d3fd12fecef728cf559d98b79ae91a))
-
-
-### Features
-
-* add common Components RouteLink & Image wrapped with next.js ([b17c460](https://github.com/Howard86/nextjs-template/commit/b17c46001a6c00ae5a5cc4833c9f119968151e0b))
-* set up commitlint ([1f696f7](https://github.com/Howard86/nextjs-template/commit/1f696f7734eddf9704086b5cc911e8daab1e5e9c))
-* set up next/image ([1697c18](https://github.com/Howard86/nextjs-template/commit/1697c18bc8b23891877d8bb5f4b412acb7ca26e8))
-* update commit hook with npm scripts ([f8a4d8a](https://github.com/Howard86/nextjs-template/commit/f8a4d8acc01790a28dad07f7cf09bfa111f6c4f8))
-* update eslint config ([a1d3c53](https://github.com/Howard86/nextjs-template/commit/a1d3c536bb517b26d593b34cd16461a359c5682e))
 
 
 
