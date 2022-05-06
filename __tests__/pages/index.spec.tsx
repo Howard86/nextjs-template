@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { customRender, screen } from 'test-utils';
+import { render, screen } from 'test-utils';
 
 import Home from '@/pages/index';
 
-describe('Home', () => {
+describe('home', () => {
   it('renders a heading', () => {
-    customRender(<Home />);
+    expect.hasAssertions();
+    render(<Home />);
 
     const heading = screen.getByRole('heading', {
       name: /welcome to next\.js!/i,

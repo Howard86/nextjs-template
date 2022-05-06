@@ -88,6 +88,11 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': 0,
       },
     },
+    {
+      files: ['__tests__/**/*.ts', '__tests__/**/*.tsx'],
+      plugins: ['jest'],
+      extends: ['plugin:jest/all', 'plugin:testing-library/react'],
+    },
   ],
   rules: sharedRules,
   settings: {

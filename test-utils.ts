@@ -1,10 +1,12 @@
-import { ReactElement } from 'react';
-
 import { render } from '@testing-library/react';
 
 import GlobalProviders from '@/components/GlobalProviders';
 
-export const customRender = (ui: ReactElement, options = {}) =>
-  render(ui, { wrapper: GlobalProviders, ...options });
+const customRender = (
+  ui: JSX.Element,
+  options: Parameters<typeof render>[1] = {},
+) => render(ui, { wrapper: GlobalProviders, ...options });
 
 export * from '@testing-library/react';
+
+export { customRender as render };
