@@ -7,7 +7,7 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
-    'test-utils': '<rootDir>/test-utils',
+    '^test-utils$': '<rootDir>/test-utils',
   },
   moduleDirectories: ['node_modules', '<rootDir>/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
