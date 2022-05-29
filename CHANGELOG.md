@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/Howard86/nextjs-template/compare/v1.5.0...v1.5.1) (2022-05-29)
+
+
+### Bug Fixes
+
+* update jest config ([9dc7638](https://github.com/Howard86/nextjs-template/commit/9dc7638f60698b45167c51063b5d77506b7616e6))
+
+
+
 # [1.5.0](https://github.com/Howard86/nextjs-template/compare/v1.4.1...v1.5.0) (2022-05-06)
 
 
@@ -43,20 +52,6 @@
 
 * add debugging script & vscode config ([1a4f0dc](https://github.com/Howard86/nextjs-template/commit/1a4f0dcb12479ba557633eefe1988c06e19b5cf1))
 * **bundle:** add yarn analyze script ([112671a](https://github.com/Howard86/nextjs-template/commit/112671ae60dc7f8d52aa7b0f02f63d66dd9140cd))
-
-
-
-# [1.3.0](https://github.com/Howard86/nextjs-template/compare/v1.2.0...v1.3.0) (2021-11-08)
-
-
-### Features
-
-* **config:** set up redux with hot reload ([32f4cfd](https://github.com/Howard86/nextjs-template/commit/32f4cfd26c3913e53d8c166cb1bdf6c94eb89bec))
-* **config:** update eslint config ([7649d12](https://github.com/Howard86/nextjs-template/commit/7649d1288e486c3e5c052b5b3f29e00de91132e2))
-* **next:** update next.config & tsconfig following next@12 ([273cae5](https://github.com/Howard86/nextjs-template/commit/273cae5e64017f1a8958858e430c9760622fcab7))
-* **script:** set up chakra-cli gen script ([de16f5e](https://github.com/Howard86/nextjs-template/commit/de16f5e8e0579ad19b40a0030272d3cbf98824df))
-* **service:** add local api call to rtk query ([38739f3](https://github.com/Howard86/nextjs-template/commit/38739f37de1a9dd32a3773d0174115d7ebaa498e))
-* **style:** update chakra theme ([2e4854c](https://github.com/Howard86/nextjs-template/commit/2e4854cc22832cc88341b374a286b43f30315561))
 
 
 
