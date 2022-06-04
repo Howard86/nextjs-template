@@ -1,19 +1,21 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import {
+  type AnyAction,
+  type ThunkDispatch,
+  configureStore,
+} from '@reduxjs/toolkit';
 
 import reducer from './reducer';
 
 import { isDev } from '@/common/config';
 import localApi from '@/common/services/local';
 
-const configureAppStore = () => {
+export const configureAppStore = (preloadedState?: TypedObject) => {
   const store = configureStore({
     reducer,
     devTools: isDev,
-    middleware: (getDefaultMiddleware) => [
-      ...getDefaultMiddleware(),
-      localApi.middleware,
-    ],
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(localApi.middleware),
+    preloadedState,
   });
 
   if (isDev && module.hot) {
@@ -25,10 +27,9 @@ const configureAppStore = () => {
 
 const store = configureAppStore();
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
-
-export const useAppDispatch = (): AppDispatch => useDispatch();
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+export type AppStore = typeof store;
+export type RootState = ReturnType<AppStore['getState']>;
+export type AppDispatch = AppStore['dispatch'] &
+  ThunkDispatch<RootState, void, AnyAction>;
 
 export default store;

@@ -1,14 +1,12 @@
-import React from 'react';
-
 import { screen } from '@testing-library/react';
-import { render } from 'test-utils';
+import { appRender } from 'test-utils';
 
 import Home from '@/pages/index';
 
 describe('home', () => {
   it('renders Home', () => {
     expect.hasAssertions();
-    render(<Home />);
+    appRender(<Home />);
 
     expect(document.title).toBe('Create Next App');
     expect(
@@ -22,7 +20,7 @@ describe('home', () => {
 
   it('calls /hello api with mock data', async () => {
     expect.hasAssertions();
-    render(<Home />);
+    appRender(<Home />);
 
     await expect(screen.findByText('/hello')).resolves.toBeInTheDocument();
     await expect(
