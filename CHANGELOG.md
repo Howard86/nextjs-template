@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/Howard86/nextjs-template/compare/v1.6.0...v1.7.0) (2022-06-04)
+
+
+### Bug Fixes
+
+* reduce bundle size by removing custom config ([13c7c2b](https://github.com/Howard86/nextjs-template/commit/13c7c2bb0dcca0d350640898cba2513edc96fc8c))
+
+
+### Features
+
+* **name:** add name feature folder to separate logic ([49ffece](https://github.com/Howard86/nextjs-template/commit/49ffeceeb26ca1d064d5707b98c1a8f997ccfceb))
+
+
+
 # [1.6.0](https://github.com/Howard86/nextjs-template/compare/v1.5.1...v1.6.0) (2022-06-04)
 
 
@@ -31,21 +45,6 @@
 ### Bug Fixes
 
 * update ci syntax ([54dc2f4](https://github.com/Howard86/nextjs-template/commit/54dc2f406c6255ef8844cb36b2d0788b13f68eb1))
-
-
-
-# [1.4.0](https://github.com/Howard86/nextjs-template/compare/v1.3.1...v1.4.0) (2021-12-05)
-
-
-### Bug Fixes
-
-* fix type-check script ([bd965e1](https://github.com/Howard86/nextjs-template/commit/bd965e19cfe4f82187b9b86ed449b727939ddf5e))
-
-
-### Features
-
-* **test:** set up e2e test scripts with cypress ([3ce7ce1](https://github.com/Howard86/nextjs-template/commit/3ce7ce1de26b335c6ed40e109e809fc42746b9ed))
-* **test:** set up unit test with jest ([b3e17e5](https://github.com/Howard86/nextjs-template/commit/b3e17e5790b7ba64ecaf628fca32a948489b3f0e))
 
 
 
