@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/Howard86/nextjs-template/compare/v1.5.1...v1.6.0) (2022-06-04)
+
+
+### Features
+
+* set up msw on server & browser ([58a8696](https://github.com/Howard86/nextjs-template/commit/58a8696f947f69c4feac8ce6c7a3e5ce8dfde79c))
+
+
+
 ## [1.5.1](https://github.com/Howard86/nextjs-template/compare/v1.5.0...v1.5.1) (2022-05-29)
 
 
@@ -37,21 +46,6 @@
 
 * **test:** set up e2e test scripts with cypress ([3ce7ce1](https://github.com/Howard86/nextjs-template/commit/3ce7ce1de26b335c6ed40e109e809fc42746b9ed))
 * **test:** set up unit test with jest ([b3e17e5](https://github.com/Howard86/nextjs-template/commit/b3e17e5790b7ba64ecaf628fca32a948489b3f0e))
-
-
-
-## [1.3.1](https://github.com/Howard86/nextjs-template/compare/v1.3.0...v1.3.1) (2021-12-03)
-
-
-### Bug Fixes
-
-* update eslint & prettier config after bumping deps ([eae978c](https://github.com/Howard86/nextjs-template/commit/eae978ca012fb6e696e38c73aadfa3e187fe60f2))
-
-
-### Features
-
-* add debugging script & vscode config ([1a4f0dc](https://github.com/Howard86/nextjs-template/commit/1a4f0dcb12479ba557633eefe1988c06e19b5cf1))
-* **bundle:** add yarn analyze script ([112671a](https://github.com/Howard86/nextjs-template/commit/112671ae60dc7f8d52aa7b0f02f63d66dd9140cd))
 
 
 
