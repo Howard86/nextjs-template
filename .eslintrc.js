@@ -10,6 +10,10 @@ const sharedRules = {
       allow: ['warn', 'error'],
     },
   ],
+  'no-param-reassign': [
+    2,
+    { props: true, ignorePropertyModificationsFor: ['state', 'req'] },
+  ],
   'no-restricted-syntax': [
     2,
     'ForInStatement',
@@ -89,9 +93,12 @@ module.exports = {
       },
     },
     {
-      files: ['__tests__/**/*.ts', '__tests__/**/*.tsx'],
+      files: ['**/*.spec.ts', '**/*.spec.tsx'],
       plugins: ['jest'],
       extends: ['plugin:jest/all', 'plugin:testing-library/react'],
+      rules: {
+        'jest/no-hooks': 0,
+      },
     },
   ],
   rules: sharedRules,
