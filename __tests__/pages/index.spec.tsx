@@ -1,18 +1,32 @@
 import React from 'react';
 
-import { render, screen } from 'test-utils';
+import { screen } from '@testing-library/react';
+import { render } from 'test-utils';
 
 import Home from '@/pages/index';
 
 describe('home', () => {
-  it('renders a heading', () => {
+  it('renders Home', () => {
     expect.hasAssertions();
     render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    });
+    expect(document.title).toBe('Create Next App');
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: /welcome to next\.js!/i,
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole('img')).toHaveAttribute('alt', 'Vercel Logo');
+  });
 
-    expect(heading).toBeInTheDocument();
+  it('calls /hello api with mock data', async () => {
+    expect.hasAssertions();
+    render(<Home />);
+
+    await expect(screen.findByText('/hello')).resolves.toBeInTheDocument();
+    await expect(
+      screen.findByText('MOCK_NAME', { exact: false }),
+    ).resolves.toBeInTheDocument();
   });
 });

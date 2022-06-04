@@ -21,6 +21,7 @@ Shipped with following developer tools:
 5. [Prettier](https://prettier.io/)
 6. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
 7. [Commitlint](https://commitlint.js.org/#/)
+8. [Mock Service Worker](https://mswjs.io)
 
 ## Getting Started
 

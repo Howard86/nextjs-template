@@ -1,9 +1,11 @@
 const path = require('path');
 
+const buildEslintCommand = (filenames) =>
+  `next lint --fix --file ${filenames
+    .map((f) => path.relative(process.cwd(), f))
+    .join(' --file ')}`;
+
 module.exports = {
-  '**/*.{json,md}': ['prettier --write'],
-  '**/*.{ts,tsx}': (filenames) =>
-    `next lint --fix --file ${filenames
-      .map((file) => path.relative(process.cwd(), file))
-      .join(' --file ')}`,
+  '*.{json,md}': ['prettier --write'],
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand],
 };

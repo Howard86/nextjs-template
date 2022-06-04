@@ -11,6 +11,7 @@ import Head from 'next/head';
 
 import Image from '@/components/Image';
 import RouteLink from '@/components/RouteLink';
+import vercelLogo from '@/public/vercel.svg';
 import { useGetNameQuery } from '@/services/local';
 
 const Home = (): JSX.Element => {
@@ -49,8 +50,8 @@ const Home = (): JSX.Element => {
           <Skeleton isLoaded={isSuccess}>
             {data && fulfilledTimeStamp && (
               <Text>
-                Local API <Text as="code">/hello</Text> processed within{' '}
-                {fulfilledTimeStamp - data.timestamp}ms
+                Local API <Text as="code">/hello</Text> processed {data.name}{' '}
+                within {fulfilledTimeStamp - data.timestamp}ms
               </Text>
             )}
           </Skeleton>
@@ -115,7 +116,7 @@ const Home = (): JSX.Element => {
             isExternal
           >
             Powered by{' '}
-            <Image src="/vercel.svg" alt="Vercel Logo" width={64} height={64} />
+            <Image src={vercelLogo} alt="Vercel Logo" width={64} height={64} />
           </Link>
         </Box>
       </Container>
