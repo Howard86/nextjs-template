@@ -3,9 +3,8 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 import reducer from './reducer';
 
-import { localApi } from '@/common/services/local';
-
-const isDev = process.env.NODE_ENV !== 'production';
+import { isDev } from '@/common/config';
+import localApi from '@/common/services/local';
 
 const configureAppStore = () => {
   const store = configureStore({

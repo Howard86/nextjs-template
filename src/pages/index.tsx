@@ -11,7 +11,7 @@ import Head from 'next/head';
 
 import Image from '@/common/components/Image';
 import RouteLink from '@/common/components/RouteLink';
-import { useGetNameQuery } from '@/common/services/local';
+import { useGetNameQuery } from '@/features/name/api';
 import vercelLogo from '@/public/vercel.svg';
 
 const Home = (): JSX.Element => {
