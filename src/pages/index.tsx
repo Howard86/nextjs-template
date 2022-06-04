@@ -9,10 +9,10 @@ import {
 } from '@chakra-ui/react';
 import Head from 'next/head';
 
-import Image from '@/components/Image';
-import RouteLink from '@/components/RouteLink';
+import Image from '@/common/components/Image';
+import RouteLink from '@/common/components/RouteLink';
+import { useGetNameQuery } from '@/features/name/api';
 import vercelLogo from '@/public/vercel.svg';
-import { useGetNameQuery } from '@/services/local';
 
 const Home = (): JSX.Element => {
   const { data, isSuccess, fulfilledTimeStamp } = useGetNameQuery();

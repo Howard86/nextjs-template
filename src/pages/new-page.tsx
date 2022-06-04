@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
 
-import RouteLink from '@/components/RouteLink';
+import RouteLink from '@/common/components/RouteLink';
 
 const NewPage = (): JSX.Element => (
   <Box>
