@@ -50,8 +50,8 @@ const Home = (): JSX.Element => {
           <Skeleton isLoaded={isSuccess}>
             {data && fulfilledTimeStamp && (
               <Text>
-                Local API <Text as="code">/hello</Text> processed within{' '}
-                {fulfilledTimeStamp - data.timestamp}ms
+                Local API <Text as="code">/hello</Text> processed {data.name}{' '}
+                within {fulfilledTimeStamp - data.timestamp}ms
               </Text>
             )}
           </Skeleton>

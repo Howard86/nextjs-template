@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { render, screen } from 'test-utils';
+import { screen } from '@testing-library/react';
+import { render } from 'test-utils';
 
 import Home from '@/pages/index';
 
@@ -17,5 +18,15 @@ describe('home', () => {
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole('img')).toHaveAttribute('alt', 'Vercel Logo');
+  });
+
+  it('calls /hello api with mock data', async () => {
+    expect.hasAssertions();
+    render(<Home />);
+
+    await expect(screen.findByText('/hello')).resolves.toBeInTheDocument();
+    await expect(
+      screen.findByText('MOCK_NAME', { exact: false }),
+    ).resolves.toBeInTheDocument();
   });
 });
