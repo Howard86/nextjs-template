@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import GlobalProviders from '@/components/GlobalProviders';
+import GlobalProviders from '@/common/components/GlobalProviders';
 
 const customRender = (
   ui: JSX.Element,

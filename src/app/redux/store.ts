@@ -3,7 +3,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 import reducer from './reducer';
 
-import { localApi } from '@/services/local';
+import { localApi } from '@/common/services/local';
 
 const isDev = process.env.NODE_ENV !== 'production';
 

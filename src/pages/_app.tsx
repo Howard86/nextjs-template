@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { AppProps } from 'next/app';
 
-import GlobalProviders from '@/components/GlobalProviders';
+import GlobalProviders from '@/common/components/GlobalProviders';
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
   require('../../mocks');
