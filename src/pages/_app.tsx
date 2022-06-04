@@ -4,9 +4,8 @@ import { Provider as ReduxProvider } from 'react-redux';
 
 import store from '@/app/redux/store';
 import theme from '@/app/theme';
-import { isApiMocked } from '@/common/config';
 
-if (isApiMocked) {
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
   require('../../mocks');
 }
 
