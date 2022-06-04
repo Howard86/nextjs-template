@@ -23,7 +23,8 @@
     "prettier",
     "lint-staged",
     "husky",
-    "commitlint"
+    "commitlint",
+    "msw"
   ],
   "bugs": {
     "url": "https://github.com/Howard86/nextjs-template/issues"
