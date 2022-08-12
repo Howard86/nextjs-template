@@ -57,7 +57,7 @@
     "react-redux": "^8.0.2"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "^2.1.2",
+    "@chakra-ui/cli": "^2.1.4",
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "@next/bundle-analyzer": "^12.2.4",
