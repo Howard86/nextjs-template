@@ -1,8 +1,14 @@
 import { rest } from 'msw';
 
+import { generateResponseResolver } from './utils';
+
 const handlers = [
-  rest.get('/api/hello', (_req, res, ctx) =>
-    res(ctx.json<Local.HelloApi>({ name: 'MOCK_NAME', timestamp: Date.now() })),
+  rest.get(
+    '/api/hello',
+    generateResponseResolver<Local.HelloApi>({
+      name: 'MOCK_NAME',
+      timestamp: Date.now(),
+    }),
   ),
 ];
 
