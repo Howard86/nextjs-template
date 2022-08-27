@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/Howard86/nextjs-template/compare/v1.7.0...v1.7.1) (2022-08-27)
+
+
+### Bug Fixes
+
+* **msw:** add missing peerDeps graphql for local testing ([6f34ca0](https://github.com/Howard86/nextjs-template/commit/6f34ca007a8dcce5e4132213fbe7afa32dda597e))
+
+
+
 # [1.7.0](https://github.com/Howard86/nextjs-template/compare/v1.6.0...v1.7.0) (2022-06-04)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * set up eslint config for testing ([88a7804](https://github.com/Howard86/nextjs-template/commit/88a7804e328cc0adecaff9cff0a6ba8013bf22ad))
-
-
-
-## [1.4.1](https://github.com/Howard86/nextjs-template/compare/v1.4.0...v1.4.1) (2022-02-20)
-
-
-### Bug Fixes
-
-* update ci syntax ([54dc2f4](https://github.com/Howard86/nextjs-template/commit/54dc2f406c6255ef8844cb36b2d0788b13f68eb1))
 
 
 
