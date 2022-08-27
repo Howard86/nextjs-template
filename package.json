@@ -18,7 +18,6 @@
     "redux-toolkit",
     "rtk-query",
     "jest",
-    "cypress",
     "eslint",
     "prettier",
     "lint-staged",
