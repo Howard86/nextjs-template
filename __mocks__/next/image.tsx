@@ -1,11 +1,11 @@
 import { DetailedHTMLProps, ImgHTMLAttributes } from 'react';
 
-const Image = (
+export default function Image(
   props: DetailedHTMLProps<
     ImgHTMLAttributes<HTMLImageElement>,
     HTMLImageElement
   >,
+) {
   // eslint-disable-next-line @next/next/no-img-element
-) => <img alt="" {...props} />;
-
-export default Image;
+  return <img alt="" {...props} />;
+}
