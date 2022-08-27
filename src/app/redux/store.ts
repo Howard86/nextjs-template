@@ -4,10 +4,10 @@ import {
   configureStore,
 } from '@reduxjs/toolkit';
 
-import reducer from './reducer';
-
 import { isDev } from '@/common/config';
 import localApi from '@/common/services/local';
+
+import reducer from './reducer';
 
 export const configureAppStore = (preloadedState?: TypedObject) => {
   const store = configureStore({

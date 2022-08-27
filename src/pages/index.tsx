@@ -14,7 +14,7 @@ import RouteLink from '@/common/components/RouteLink';
 import { useGetNameQuery } from '@/features/name/api';
 import vercelLogo from '@/public/vercel.svg';
 
-const Home = (): JSX.Element => {
+export default function Home() {
   const { data, isSuccess, fulfilledTimeStamp } = useGetNameQuery();
 
   return (
@@ -122,6 +122,4 @@ const Home = (): JSX.Element => {
       </Container>
     </>
   );
-};
-
-export default Home;
+}

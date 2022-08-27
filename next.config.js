@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires, global-require */
 const { PHASE_PRODUCTION_BUILD } = require('next/constants');
 
 /** @type{import('next').NextConfig} */
@@ -5,7 +6,7 @@ const config = {
   reactStrictMode: true,
   swcMinify: true,
   eslint: {
-    dirs: ['src', '__tests__'],
+    dirs: ['src', '__tests__', 'mocks', '__mocks__'],
   },
 };
 

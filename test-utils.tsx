@@ -1,8 +1,7 @@
 import { ChildrenProps } from 'react';
-
+import { Provider as ReduxProvider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
-import { Provider as ReduxProvider } from 'react-redux';
 
 import { type RootState, configureAppStore } from '@/app/redux/store';
 
@@ -15,11 +14,13 @@ export const appRender = (
   ui: JSX.Element,
   { preloadedState, ...options }: AppRenderOption = {},
 ) => {
-  const AppProvider = ({ children }: ChildrenProps) => (
-    <ReduxProvider store={configureAppStore(preloadedState)}>
-      <ChakraProvider>{children}</ChakraProvider>
-    </ReduxProvider>
-  );
+  function AppProvider({ children }: ChildrenProps) {
+    return (
+      <ReduxProvider store={configureAppStore(preloadedState)}>
+        <ChakraProvider>{children}</ChakraProvider>
+      </ReduxProvider>
+    );
+  }
 
   return render(ui, { wrapper: AppProvider, ...options });
 };

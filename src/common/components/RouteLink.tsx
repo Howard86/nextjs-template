@@ -1,5 +1,4 @@
 import { forwardRef, ReactNode } from 'react';
-
 import { Link, LinkProps } from '@chakra-ui/react';
 import NextLink from 'next/link';
 

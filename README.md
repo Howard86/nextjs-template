@@ -16,12 +16,11 @@ Shipped with following developer tools:
 
 1. [TypeScript](https://www.typescriptlang.org/)
 2. [Jest](https://jestjs.io)
-3. [Cypress](https://www.cypress.io)
-4. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
-5. [Prettier](https://prettier.io/)
-6. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
-7. [Commitlint](https://commitlint.js.org/#/)
-8. [Mock Service Worker](https://mswjs.io)
+3. [ESLint](https://eslint.org/) with [Airbnb config](https://github.com/iamturns/eslint-config-airbnb-typescript)
+4. [Prettier](https://prettier.io/)
+5. Pre-commit & pre-push git hooks powered by [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://typicode.github.io/husky/#/)
+6. [Commitlint](https://commitlint.js.org/#/)
+7. [Mock Service Worker](https://mswjs.io)
 
 ## Getting Started
 

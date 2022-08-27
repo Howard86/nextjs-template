@@ -1,7 +1,7 @@
 import 'whatwg-fetch';
 import '@testing-library/jest-dom';
 
-import { server } from './mocks/server';
+import server from './mocks/server';
 
 beforeAll(() => server.listen({ onUnhandledRequest: 'error' }));
 
