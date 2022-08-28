@@ -50,8 +50,9 @@ export default function Home() {
           <Skeleton isLoaded={isSuccess}>
             {data && fulfilledTimeStamp && (
               <Text>
-                Local API <Text as="code">/hello</Text> processed {data.name}{' '}
-                within {fulfilledTimeStamp - data.timestamp}ms
+                Local API <Text as="code">/hello</Text> processed{' '}
+                {data.data.name} within{' '}
+                {fulfilledTimeStamp - data.data.timestamp}ms
               </Text>
             )}
           </Skeleton>
