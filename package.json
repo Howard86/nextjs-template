@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.1.7",
-    "@commitlint/cli": "^17.1.0",
+    "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@next/bundle-analyzer": "^12.2.5",
     "@testing-library/jest-dom": "^5.16.5",
