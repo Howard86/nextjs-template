@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.9",
-    "@emotion/react": "^11.10.0",
+    "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.0",
     "@reduxjs/toolkit": "^1.8.5",
     "framer-motion": "^7.2.1",
