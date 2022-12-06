@@ -657,12 +657,11 @@
     "@chakra-ui/visually-hidden" "2.0.12"
     "@zag-js/focus-visible" "0.1.0"
 
-"@chakra-ui/cli@^2.1.8":
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.1.8.tgz#03aae0f84065bf5317a22696052fe653a1289187"
-  integrity sha512-xIIHCvoluALzMola8f9+JmzMGC/WkU9WVdCxOzQRj/ltROAulE2HvFCYLYzwjAkIF4W4AY3Nrn6oDlQddmMYIg==
+"@chakra-ui/cli@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.2.0.tgz#7a85aca1ce950a9112d330bba4e584438ba4e8ff"
+  integrity sha512-JhfRq9iXdWMdC4OYfrGc0rL1wtwkVl6hoOwC3ZhHwBi937RgfuthS62UIak+0Pc9Sxpo7ST0O6xWgWzbVnppBw==
   dependencies:
-    "@chakra-ui/utils" "2.0.10"
     "@swc/core" "^1.2.177"
     chokidar "^3.5.3"
     cli-check-node "^1.3.4"
@@ -1329,16 +1328,6 @@
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/@chakra-ui/transition/-/transition-2.0.11.tgz#b2cfeb2150871c635cb9d03d9b525481dbe56f56"
   integrity sha512-O0grc162LARPurjz1R+J+zr4AAKsVwN5+gaqLfZLMWg6TpvczJhwEA2fLCNAdkC/gomere390bJsy52xfUacUw==
-
-"@chakra-ui/utils@2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-2.0.10.tgz#72e870f53753fd2d8c5f9258c76e8d59959bc1ce"
-  integrity sha512-OIHrAPwAMVLrsZmYkCvmUr5bu5ZoDkgmoqRTKNvYLA/1iODsYQHRhG+0WJBKh/x0orVld8sCLKqjo4bXPA1QIg==
-  dependencies:
-    "@types/lodash.mergewith" "4.6.6"
-    css-box-model "1.2.1"
-    framesync "5.3.0"
-    lodash.mergewith "4.6.2"
 
 "@chakra-ui/utils@2.0.11":
   version "2.0.11"
