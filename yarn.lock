@@ -664,10 +664,10 @@
     "@chakra-ui/visually-hidden" "2.0.13"
     "@zag-js/focus-visible" "0.1.0"
 
-"@chakra-ui/cli@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.2.0.tgz#7a85aca1ce950a9112d330bba4e584438ba4e8ff"
-  integrity sha512-JhfRq9iXdWMdC4OYfrGc0rL1wtwkVl6hoOwC3ZhHwBi937RgfuthS62UIak+0Pc9Sxpo7ST0O6xWgWzbVnppBw==
+"@chakra-ui/cli@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.3.0.tgz#66f229b91c53c9738fb1592ba8b0bc4b1c55f16f"
+  integrity sha512-63Xs4aMYxc17U8GfyPuQnAv8qRg/z2oCd8lgAdn6m755lvQ0e5RZ+mNecfJN1uNXRs3BmKXWnmGh1NvfQ6q1UQ==
   dependencies:
     "@swc/core" "^1.2.177"
     chokidar "^3.5.3"
@@ -676,7 +676,6 @@
     cli-welcome "^2.2.2"
     commander "^9.3.0"
     lodash.throttle "^4.1.1"
-    module-alias "^2.2.2"
     ora "^5.3.0"
     prettier "^2.7.1"
     regenerator-runtime "^0.13.7"
@@ -6635,11 +6634,6 @@ minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
-
-module-alias@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
-  integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
 
 mrmime@^1.0.0:
   version "1.0.0"
