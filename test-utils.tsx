@@ -3,7 +3,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
 
-import { type RootState, configureAppStore } from '@/app/redux/store';
+import { type RootState, configureAppStore } from '@/common/redux/store';
 
 type AppRenderOption = Parameters<typeof render>[1] & {
   preloadedState?: DeepPartial<RootState>;

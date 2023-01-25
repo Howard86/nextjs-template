@@ -2,8 +2,8 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 
-import store from '@/app/redux/store';
-import theme from '@/app/theme';
+import store from '@/common/redux/store';
+import theme from '@/common/theme';
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
   import('../../mocks');
