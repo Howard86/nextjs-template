@@ -52,7 +52,7 @@
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@reduxjs/toolkit": "^1.9.1",
+    "@reduxjs/toolkit": "^1.9.2",
     "framer-motion": "^8.5.2",
     "next": "^13.1.6",
     "next-api-handler": "^0.4.3",
