@@ -49,6 +49,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/react-in-jsx-scope': 0,
     'react/require-default-props': 0,
+    'simple-import-sort/exports': 2,
     'simple-import-sort/imports': [
       2,
       {
