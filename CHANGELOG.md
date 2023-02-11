@@ -1,3 +1,12 @@
+## [1.7.2](https://github.com/Howard86/nextjs-template/compare/v1.7.1...v1.7.2) (2023-02-11)
+
+
+### Bug Fixes
+
+* fix next/link breaking changes ([38afe0b](https://github.com/Howard86/nextjs-template/commit/38afe0b197ff03aa462f0094b09a817f2249cc2e))
+
+
+
 ## [1.7.1](https://github.com/Howard86/nextjs-template/compare/v1.7.0...v1.7.1) (2022-08-27)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * update jest config ([9dc7638](https://github.com/Howard86/nextjs-template/commit/9dc7638f60698b45167c51063b5d77506b7616e6))
-
-
-
-# [1.5.0](https://github.com/Howard86/nextjs-template/compare/v1.4.1...v1.5.0) (2022-05-06)
-
-
-### Features
-
-* set up eslint config for testing ([88a7804](https://github.com/Howard86/nextjs-template/commit/88a7804e328cc0adecaff9cff0a6ba8013bf22ad))
 
 
 
