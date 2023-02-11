@@ -1,15 +1,14 @@
-import { ChildrenProps } from 'react';
+import type { ChildrenProps } from 'react';
 import { Provider as ReduxProvider } from 'react-redux';
 import { ChakraProvider } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
 
-import { type RootState, configureAppStore } from '@/common/redux/store';
+import { configureAppStore, type RootState } from '@/common/redux/store';
 
-type AppRenderOption = Parameters<typeof render>[1] & {
+export type AppRenderOption = Parameters<typeof render>[1] & {
   preloadedState?: DeepPartial<RootState>;
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export const appRender = (
   ui: JSX.Element,
   { preloadedState, ...options }: AppRenderOption = {},

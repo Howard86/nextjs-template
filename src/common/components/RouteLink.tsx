@@ -9,7 +9,7 @@ interface RouteLinkProps extends LinkProps {
 
 const RouteLink = forwardRef<HTMLAnchorElement, RouteLinkProps>(
   ({ href, children, ...props }, ref) => (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <Link ref={ref} {...props}>
         {children}
       </Link>

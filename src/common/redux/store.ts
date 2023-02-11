@@ -1,7 +1,7 @@
 import {
   type AnyAction,
-  type ThunkDispatch,
   configureStore,
+  type ThunkDispatch,
 } from '@reduxjs/toolkit';
 
 import { isDev } from '@/common/config';
