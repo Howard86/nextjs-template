@@ -6,16 +6,16 @@ import {
   SimpleGrid,
   Skeleton,
   Text,
-} from '@chakra-ui/react';
-import Head from 'next/head';
+} from '@chakra-ui/react'
+import Head from 'next/head'
 
-import Image from '@/common/components/Image';
-import RouteLink from '@/common/components/RouteLink';
-import { useGetNameQuery } from '@/features/name/api';
-import vercelLogo from '@/public/vercel.svg';
+import Image from '@/common/components/Image'
+import RouteLink from '@/common/components/RouteLink'
+import { useGetNameQuery } from '@/features/name/api'
+import vercelLogo from '@/public/vercel.svg'
 
 export default function Home() {
-  const { data, isSuccess, fulfilledTimeStamp } = useGetNameQuery();
+  const { data, isSuccess, fulfilledTimeStamp } = useGetNameQuery()
 
   return (
     <>
@@ -122,5 +122,5 @@ export default function Home() {
         </Box>
       </Container>
     </>
-  );
+  )
 }

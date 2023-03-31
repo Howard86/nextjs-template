@@ -1,5 +1,5 @@
-import { ChildrenProps } from 'react';
+import { ChildrenProps } from 'react'
 
-const Head = ({ children }: ChildrenProps) => children;
+const Head = ({ children }: ChildrenProps) => children
 
-export default Head;
+export default Head

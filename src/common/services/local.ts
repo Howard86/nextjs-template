@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 const localApi = createApi({
   reducerPath: 'local',
@@ -6,6 +6,6 @@ const localApi = createApi({
     baseUrl: '/api',
   }),
   endpoints: () => ({}),
-});
+})
 
-export default localApi;
+export default localApi

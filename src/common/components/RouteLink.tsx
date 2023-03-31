@@ -1,10 +1,10 @@
-import { forwardRef, ReactNode } from 'react';
-import { Link, LinkProps } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Link, LinkProps } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { forwardRef, ReactNode } from 'react'
 
 interface RouteLinkProps extends LinkProps {
-  href: string;
-  children: ReactNode;
+  href: string
+  children: ReactNode
 }
 
 const RouteLink = forwardRef<HTMLAnchorElement, RouteLinkProps>(
@@ -14,7 +14,7 @@ const RouteLink = forwardRef<HTMLAnchorElement, RouteLinkProps>(
         {children}
       </Link>
     </NextLink>
-  ),
-);
+  )
+)
 
-export default RouteLink;
+export default RouteLink
