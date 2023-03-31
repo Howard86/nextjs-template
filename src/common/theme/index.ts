@@ -1,6 +1,6 @@
-import { extendTheme, withDefaultColorScheme } from '@chakra-ui/react';
+import { extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 
-import styles from './styles';
+import styles from './styles'
 
 const theme = extendTheme(
   {
@@ -10,7 +10,7 @@ const theme = extendTheme(
       useSystemColorMode: false,
     },
   },
-  withDefaultColorScheme({ colorScheme: 'purple' }),
-);
+  withDefaultColorScheme({ colorScheme: 'purple' })
+)
 
-export default theme;
+export default theme

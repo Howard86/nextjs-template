@@ -2,12 +2,12 @@ import {
   type AnyAction,
   configureStore,
   type ThunkDispatch,
-} from '@reduxjs/toolkit';
+} from '@reduxjs/toolkit'
 
-import { isDev } from '@/common/config';
-import localApi from '@/common/services/local';
+import { isDev } from '@/common/config'
+import localApi from '@/common/services/local'
 
-import reducer from './reducer';
+import reducer from './reducer'
 
 export const configureAppStore = (preloadedState?: TypedObject) => {
   const store = configureStore({
@@ -16,20 +16,20 @@ export const configureAppStore = (preloadedState?: TypedObject) => {
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware().concat(localApi.middleware),
     preloadedState,
-  });
+  })
 
   if (isDev && module.hot) {
-    module.hot.accept('./reducer', () => store.replaceReducer(reducer));
+    module.hot.accept('./reducer', () => store.replaceReducer(reducer))
   }
 
-  return store;
-};
+  return store
+}
 
-const store = configureAppStore();
+const store = configureAppStore()
 
-export type AppStore = typeof store;
-export type RootState = ReturnType<AppStore['getState']>;
+export type AppStore = typeof store
+export type RootState = ReturnType<AppStore['getState']>
 export type AppDispatch = AppStore['dispatch'] &
-  ThunkDispatch<RootState, void, AnyAction>;
+  ThunkDispatch<RootState, void, AnyAction>
 
-export default store;
+export default store

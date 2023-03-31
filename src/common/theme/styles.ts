@@ -1,4 +1,4 @@
-import { ChakraTheme } from '@chakra-ui/react';
+import { ChakraTheme } from '@chakra-ui/react'
 
 const styles: ChakraTheme['styles'] = {
   global: {
@@ -6,6 +6,6 @@ const styles: ChakraTheme['styles'] = {
       h: 'full',
     },
   },
-};
+}
 
-export default styles;
+export default styles

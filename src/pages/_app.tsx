@@ -1,12 +1,12 @@
-import { Provider as ReduxProvider } from 'react-redux';
-import { ChakraProvider } from '@chakra-ui/react';
-import type { AppProps } from 'next/app';
+import { ChakraProvider } from '@chakra-ui/react'
+import type { AppProps } from 'next/app'
+import { Provider as ReduxProvider } from 'react-redux'
 
-import store from '@/common/redux/store';
-import theme from '@/common/theme';
+import store from '@/common/redux/store'
+import theme from '@/common/theme'
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'true') {
-  import('../../mocks');
+  import('../../mocks')
 }
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -16,5 +16,5 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </ChakraProvider>
     </ReduxProvider>
-  );
+  )
 }

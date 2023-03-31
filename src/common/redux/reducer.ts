@@ -1,9 +1,9 @@
-import { combineReducers } from '@reduxjs/toolkit';
+import { combineReducers } from '@reduxjs/toolkit'
 
-import localApi from '@/common/services/local';
+import localApi from '@/common/services/local'
 
 const reducer = combineReducers({
   [localApi.reducerPath]: localApi.reducer,
-});
+})
 
-export default reducer;
+export default reducer

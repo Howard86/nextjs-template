@@ -1,7 +1,7 @@
-import { SuccessApiResponse } from 'next-api-handler';
+import { SuccessApiResponse } from 'next-api-handler'
 
-import { isDev } from '@/common/config';
-import localApi from '@/common/services/local';
+import { isDev } from '@/common/config'
+import localApi from '@/common/services/local'
 
 export const nameApi = localApi.injectEndpoints({
   overrideExisting: isDev,
@@ -10,6 +10,6 @@ export const nameApi = localApi.injectEndpoints({
       query: () => '/hello',
     }),
   }),
-});
+})
 
-export const { useGetNameQuery } = nameApi;
+export const { useGetNameQuery } = nameApi
