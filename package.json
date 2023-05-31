@@ -72,7 +72,7 @@
     "@types/react-dom": "^18.2.4",
     "@types/react-redux": "^7.1.25",
     "@types/testing-library__jest-dom": "^5.14.6",
-    "@types/webpack-env": "^1.18.0",
+    "@types/webpack-env": "^1.18.1",
     "eslint": "^8.41.0",
     "eslint-config-howardism": "^0.1.0",
     "graphql": "^16.6.0",
