@@ -49,7 +49,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/react": "^2.7.0",
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@reduxjs/toolkit": "^1.9.5",
